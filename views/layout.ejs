@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+
+  <body>
+    <div id="page_wrapper">
+    	<h1>Blog para SWCM </h1>
+      <aside>
+        <hr>
+        <strong>
+          <div id="menu">
+            <a href="/">HOME</a>
+            <a href="/info">INFO</a>
+            <a href="/posts">POSTS</a>
+          </div>
+          <div id="search">
+            <form method="GET" action="/posts/search">
+              <input type="text"  name="search_bar" size="30" value="Introduzca su búsqueda ...">
+              <input type="submit" value="Buscar">
+            </form>
+          </div>
+        </strong>
+        <br><br>
+        </hr>
+      </aside>
+    	<hr>
+
+      	<%- body %>
+  	  </hr>
+
+      <hr>
+        <p>
+  		    Curso 2012-2013
+        </p>
+      </hr>
+
+    <hr>
+      <p>
+        Contador de visitas: Llevamos <%= contador %> visitas
+      </p>
+  	</hr>
+</div>
+  </body>
+</html> 
