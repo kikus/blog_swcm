@@ -9,6 +9,7 @@
     "ejs": "*",
     "express-partials":"git://github.com/publicclass/express-partials.git#c9b8adde89387dea",
     "sequelize": "git://github.com/sequelize/sequelize.git"
+    "pg": "0.6.x"
   },
   "engines": {
     "node": "0.10.x",
